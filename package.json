@@ -1,0 +1,7 @@
+{
+  "name": "qa-generator-tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rener Pires <rener.gbrl.p@gmail.com>",
+  "license": "MIT"
+}

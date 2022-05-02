@@ -8,5 +8,5 @@ O objetivo principal dessa ferramenta é agilizar os testes de exploração em a
 
 A princípio a ferramenta conta com alguns padrões de dados que podem ser gerados (por default) porém o objetivo é permitir que novos patterns possam ser adicionados para melhor atender as necessidades específicas de cada QA.
 
-- ⌨️ com ❤️ por Rener Pires
-- #somosVeri
+⌨️ com ❤️ por Rener Pires
+#somosVeri

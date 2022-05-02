@@ -1,0 +1,19 @@
+{
+    "name": "QA Generation Tool",
+    "description": "Uma extensão criada com o intuito de possibilitar a geração de alguns dados usualmente utilizado por QA Testers.",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "action": {
+        "default_popup": "src/index.html",
+        "default_icon": "assets/icon.svg"
+    },
+
+    "permissions": [
+        "contextMenus"
+    ],
+
+    "background": { 
+        "service_worker": "src/background.js"
+    }
+}

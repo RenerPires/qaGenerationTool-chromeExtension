@@ -1,3 +1,5 @@
+import generator from "./utils/generator.js"
+
 chrome.runtime.onInstalled.addListener(function() {
 
     chrome.contextMenus.create({
@@ -52,7 +54,13 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     switch(info.menuItemId)
     {
         case "uuid":
-            value = "uuidteste"
+            value = generator.uuid()
+            break
+        case "cnpj":
+            value = generator.cnpj()
+            break
+        case "cpf":
+            value = generator.cpf()
             break
     }
 

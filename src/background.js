@@ -44,7 +44,10 @@ chrome.runtime.onInstalled.addListener(function() {
     });
 
     chrome.contextMenus.create({
-        "type": "separator"
+        "title": "Gerar Nome",
+        "parentId": "qaGeneration",
+        "id": "name",
+        "contexts":["editable"]
     });
 });
 
@@ -61,6 +64,15 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
             break
         case "cpf":
             value = generator.cpf()
+            break
+        case "email":
+            value = generator.email()
+            break
+        case "fone":
+            value = generator.fone()
+            break
+        case "name":
+            value = generator.name()
             break
     }
 

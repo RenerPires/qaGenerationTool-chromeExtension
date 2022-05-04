@@ -97,9 +97,9 @@ class generator {
 
         email = (isMan) ? `${NOMES_MASCULINO[this.getRandomInt(0, NOMES_MASCULINO.length - 1)]}` : `${NOMES_FEMININO[this.getRandomInt(0, NOMES_FEMININO.length - 1)]}`
         
-        email += `.${SOBRENOMES[this.getRandomInt(0, SOBRENOMES.length - 1)]}@qamockdata.com`.toLowerCase()
+        email += `.${SOBRENOMES[this.getRandomInt(0, SOBRENOMES.length - 1)]}@qamockdata.com`
 
-        return email
+        return email.toLowerCase()
     }
 
     name() {

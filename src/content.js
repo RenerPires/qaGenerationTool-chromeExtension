@@ -3,5 +3,20 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 
 function setValueInput(value) {
-    document.activeElement.value = value
+    const EVENT_OPTIONS = {bubbles: true, cancelable: false, composed: true}
+    const EVENTS = {
+        BLUR: new Event("blur", EVENT_OPTIONS),
+        CHANGE: new Event("change", EVENT_OPTIONS),
+        INPUT: new Event("input", EVENT_OPTIONS),
+    }
+
+    const input = document.activeElement
+
+    // navigator.clipboard.writeText(value)
+
+    console.log(value)
+
+    input.value = value
+    input.dispatchEvent(EVENTS.INPUT)
+
 }
